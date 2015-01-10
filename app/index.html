@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Native JavaScript project</title>
+
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+  <h1></h1>
+
+  <p>Example</p>
+
+  <div class="vn-item-container"></div>
+
+  <script type="text/template" id="vn-items-tpl">
+    <% _.each(vehicles, function(item, i) { %>
+    <div class="vn-item <% if (item.promo == '1') { %>promo<% } %>">
+      <div class="vn-item-img">
+        <img src="<%= item.img %>">
+      </div>
+      <div class="vn-item-text">
+        <p class="vn-item-model"><%= item.model %></p>
+        <p class="vn-item-version"><%= item.version %></p>
+        <p class="vn-item-energie"><%= item.energie %></p>
+      </div>
+      <div class="vn-item-prix">
+        <p><%= item.prix %> €</p>
+        <p class="taxe"><%= item.taxe %></p>
+      </div>
+      <div class="vn-item-chevron">
+        <img src="img/chevron2_d@2x.png">
+      </div>
+    </div>
+    <% }); %>
+  </script>
+
+  <script src="bower_components/underscore/underscore-min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

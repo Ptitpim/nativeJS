@@ -1,0 +1,70 @@
+body {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.vn-item p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.vn-item-container {
+  display: table;
+  width: 100%; }
+
+.vn-item {
+  display: table-row; }
+
+.vn-item > div {
+  display: table-cell;
+  border-bottom: 1px solid #cccccc; }
+
+.vn-item-img {
+  padding-top: 11px;
+  width: 65px; }
+
+.vn-item-img img {
+  width: 46px;
+  margin-left: 8.5px; }
+
+.vn-item-text {
+  padding: 11px 11px 11px 0;
+  vertical-align: top; }
+
+.vn-item-model {
+  font-weight: bold;
+  margin-bottom: 2px; }
+
+.promo .vn-item-model {
+  color: #b92220; }
+
+.vn-item-version {
+  margin-bottom: 6px; }
+
+.vn-item-version, .vn-item-energie {
+  color: gray; }
+
+.vn-item-prix {
+  color: #f7b100;
+  padding: 11px 0;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: bold;
+  width: 65px;
+  text-align: right; }
+
+.vn-item-prix .taxe {
+  font-size: 70%; }
+
+.promo .vn-item-prix {
+  color: #b92220; }
+
+.vn-item-chevron {
+  text-align: center;
+  vertical-align: middle;
+  width: 20px; }
+
+.vn-item-chevron img {
+  width: 7px;
+  height: 10px; }
